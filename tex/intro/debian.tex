@@ -1,0 +1,16 @@
+%&pdflatex
+\section{Debian GNU/Linux}
+\textbf{Debian} è il principale argomento di questo testo. In questo paragrafo vediamo le caratteristiche distintive di questa distribuzione GNU/Linux.
+
+Intanto, come abbiamo già detto, il fatto che sia una distribuzione \textit{GNU/Linux} ci dice che Debian ha come kernel Linux e contiene i software GNU. Di seguito sono elencate alcune delle caratteristiche che distinguono questa distribuzione:
+\begin{itemize}
+	\item Debian è composta unicamente da \textit{software libero}: significa che l'utente ha la libertà di eseguire, copiare, distribuire, studiare, modificare e migliorare il software;
+	\item I repository di Debian contengono oltre \(43\,000\) pacchetti software;
+	\item Nel tempo sono state rilasciate varie versioni di Debian: attualmente Debian è alla \textit{versione 8.6 "jessie"};
+	\item Debian usa il software \texttt{apt} per gli aggiornamenti. Segue una politica di aggiornamento standard sul modello \textit{"release cycle"}. Ciò significa che tutto il software di Debian è stato preventivamente testato a lungo al fine di risolvere bug e problemi; inoltre Debian aggiorna il software per includere nuove \textit{feature} soltanto quando rilascia una nuova versione dell'intera distribuzione Debian (fix di sicurezza e bug sono sempre rilasciati il prima possibile). Vuol dire che, ad esempio, il software non viene aggiornato in Debian 8 finché non verrà rilasciata Debian 9. Questa politica serve a garantire maggior stabilità. La politica complementare si chiama \textit{"rolling release"} dove il software viene sempre aggiornato il prima possibile all'ultima versione (\textit{ArchLinux} e \textit{Gentoo} sono esempi di distribuzioni rolling);
+	\item Debian usa \texttt{systemd} come \textit{init system}. L'init system è il primo programma che viene avviato su una qualsiasi distribuzione Linux: si occupa di inizializzare tutti i \textit{demoni} (programmi in background) e resta in esecuzione fino allo spegnimento del sistema. Conoscere il proprio init system è fondamentale per chiunque voglia imparare davvero a lavorare bene con un sistema Linux. \texttt{systemd} in realtà è anche molto più che un semplice init system e gestisce vari aspetti del sistema operativo --- viene criticato da una parte della comunità di Linux e del software libero (tra cui anche Linus Torvalds, Patrick Volkerding, Eric Raymond e l'autore di questo documento \texttt{:P}) per alcune scelte di design: log binari; violazione della filosofia Unix; \textit{feature creeping}; ecc\ldots. \texttt{systemd} è l'init system più diffuso;
+	\item Da Debian derivano quasi tutte le altre distribuzioni Linux: Debian è, in un certo senso, la distribuzione padre di tutte le altre.
+\end{itemize}
+Per maggiori informazioni su Debian si veda \texttt{www.debian.org} e \texttt{en.wikipedia.org/wiki/Debian}.
+\input{./tex/intro/get-debian}
+\input{./tex/intro/requirements}

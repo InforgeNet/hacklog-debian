@@ -1,0 +1,42 @@
+%&pdflatex
+\documentclass[10pt,twoside,openright]{report}
+
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a5paper]{geometry}
+\usepackage{emptypage}
+\usepackage{graphicx}
+\usepackage[italian]{varioref}
+\usepackage{xcolor}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage[font=small,figurewithin=chapter]{caption}
+
+\pdfminorversion = 7
+
+\title{Debian 8.6 Jessie - Guida all'installazione}
+\author{Niccolò Scatena\\\small\textit{inforge.net}}
+
+\includeonly{./tex/intro/main,
+	./tex/preparation/main,
+	./tex/install/main}
+
+\graphicspath{ {./img/} }
+\DeclareGraphicsExtensions{.jpg}
+
+\input{./tex/def}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\thispagestyle{plain}
+
+\include{./tex/intro/main}
+\include{./tex/preparation/main}
+\include{./tex/install/main}
+
+\end{document}

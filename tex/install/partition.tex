@@ -1,0 +1,17 @@
+%&pdflatex
+\section{Partizionamento del disco}
+Questa è la parte più difficile (e pericolosa). Dobbiamo partizionare il disco per far spazio a Debian. Prima di tutto, bisogna scegliere che partizioni creare per Debian: possiamo farne una sola, che conterrà tutto il sistema operativo, i programmi, e i nostri dati; oppure più partizioni dove, ad esempio, una partizione contiene il sistema operativo e i programmi (partizione \texttt{root}, simbolo \texttt{/}) e un'altra i nostri dati personali (partizione \texttt{/home}); possiamo anche dividere ulteriormente il sistema in altre partizioni ancora (\texttt{/var}, \texttt{/tmp}, \texttt{/usr}, ecc.), ma non lo consigliamo. Nell'esempio di questo testo, divideremo Debian su due partizioni: la \texttt{root} (\texttt{/}) e la \texttt{/home}. Se però si preferisce, è possibile inserire anche tutto in un'unica partizione.
+
+Dobbiamo anche decidere se utilizzare \texttt{LVM}, che permette in qualsiasi momento di ridimensionare le partizioni facilmente (si cerchi sul web per maggiori informazioni); e se cifrare il disco per evitare che qualcuno possa vedere i nostri dati semplicemente avviando una live sul sistema (si cerchi sul web per \textit{"LUKS"} per maggiori informazioni). Anche se è fortemente consigliato cifrare il disco per la sicurezza, la procedura (comunque semplice) non sarà vista in questo testo. Di seguito, ci limiteremo a partizionare il disco senza usare \texttt{LVM} e senza cifrare il disco.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics{manual-partitioning}
+	\caption{Scelta del metodo di partizionamento: guidato o manuale}
+	\label{fig:manual-partitioning}
+\end{figure}
+
+Inoltre, a questo punto, dobbiamo decidere se impostare un dual-boot con il sistema operativo già presente sul sistema (nell'esempio, Windows 10), oppure se sostituire il vecchio sistema operativo. Se vogliamo sostituire il vecchio sistema operativo, nella schermata di Figura \vref{fig:manual-partitioning} sceglieremo uno dei tre metodi guidati (\texttt{Guided}), in base al fatto se vogliamo anche impostare \texttt{LVM} e cifrare il disco. Dobbiamo scegliere la procedura guidata anche nel caso di installazione sotto macchina virtuale. Se scegliamo la procedura guidata, successivamente ci ritroveremo direttamente alla schermata di Figura \vref{fig:partitioning}.
+Se invece vogliamo mantenere anche il vecchio sistema operativo e configurare un dual-boot, dobbiamo scegliere il metodo di partizionamento \texttt{Manuale} (\texttt{Manual}, in Figura \vref{fig:manual-partitioning}), e ridurre la dimensione della partizione dell'altro sistema operativo per far spazio a Debian.
+\input{./tex/install/partition/resize-partition}
+\input{./tex/install/partition/partitioning}
