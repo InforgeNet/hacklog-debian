@@ -12,6 +12,6 @@ Forum: [https://www.inforge.net/xi](https://www.inforge.net/xi/)
 $ pdflatex debian.tex
 ```
 
-## Licensa
+## Licenza
 
 [Creative Commons ...](https://creativecommons.org/licenses/)  
