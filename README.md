@@ -3,8 +3,8 @@ Guida all'installazione di Debian 8 "jessie". Parte del progetto **Hacklog**.
 
 [>> Scarica il documento in PDF! <<](https://www.inforge.net/xi/resources/)  
 
-Sito web progetto: [https://hacklog.inforge.net](https://hacklog.inforge.net)  
-Forum: [https://www.inforge.net/xi](https://www.inforge.net/xi/)  
+Sito web progetto: [hacklog.it](https://www.hacklog.it)  
+Forum: [inforge.net](https://www.inforge.net/xi/)  
 
 ## Compilazione
 
